@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SDWan</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="login_account">帐号</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_account_hint">请输入帐号</string>
+    <string name="login_pwd_hint">请输入密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_forget_pwd">忘记密码</string>
+
+    <string name="main_speed_capture">速率趋势图</string>
+    <string name="main_upload_speed">上行%dbps</string>
+    <string name="main_download_speed">下行%dbps</string>
+    <string name="main_con_status">连接状态</string>
+    <string name="main_con_ing">已连接</string>
+    <string name="main_con_no">未连接</string>
+    <string name="main_con_err">连接不通</string>
+
+    <string name="main_more_report">日志上报</string>
+    <string name="main_more_info">日志查看</string>
+    <string name="main_more_traffic">流量统计</string>
+    <string name="main_more_config">配置信息</string>
+
+    <string name="personal_text">个人中心</string>
+    <string name="personal_pwd">修改密码</string>
+    <string name="personal_clean">清除缓存</string>
+    <string name="personal_about">关于我们</string>
+    <string name="personal_idea">意见反馈</string>
+    <string name="personal_exit">退出登录</string>
+
+    <string name="report_hint">请填写日志内容</string>
+    <string name="report_log_type">日志类型</string>
+    <string name="report_log_today">当天日志</string>
+    <string name="report_log_all">所有日志</string>
+
+    <string name="traffic_title">流量统计</string>
+    <string name="traffic_total_year">%d年累计使用流量</string>
+    <string name="traffic_month">本月流量统计</string>
+    <string name="traffic_month_used">本月使用</string>
+    <string name="traffic_month_used_total">本月累计</string>
+    <string name="traffic_month_total">本月上限</string>
+
+    <string name="edit_info">资料编辑</string>
+    <string name="edit_avter">头像</string>
+    <string name="edit_nick">昵称</string>
+    <string name="edit_account">帐号</string>
+    <string name="edit_company">企业名称</string>
+
+</resources>

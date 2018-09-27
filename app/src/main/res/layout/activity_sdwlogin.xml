@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/sd_bulue"
+    android:layout_height="match_parent"
+    tools:context=".SDWLoginActivity">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sd_login_img" />
+            <LinearLayout android:layout_marginTop="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:background="@drawable/sd_login_item_bg" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" >
+
+                <TextView android:layout_width="wrap_content" android:layout_marginLeft="5dp"  android:layout_height="wrap_content" android:text="@string/login_account" android:textSize="18sp"/>
+                <EditText android:layout_width="wrap_content" android:layout_marginLeft="25dp" android:layout_height="wrap_content" android:id="@+id/editAccount" android:hint="@string/login_account_hint" android:layout_weight="1" android:background="@color/background"/>
+                <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imgAccount"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:background="@drawable/sd_login_item_bg" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_marginLeft="5dp"  android:layout_height="wrap_content" android:text="@string/login_pwd" android:textSize="18sp"/>
+                <EditText android:layout_width="wrap_content" android:layout_marginLeft="25dp" android:layout_height="wrap_content" android:id="@+id/editPwd" android:hint="@string/login_pwd_hint" android:layout_weight="1" android:background="@color/background"/>
+                <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imgPwd" android:visibility="invisible"/>
+            </LinearLayout>
+
+        <Button android:layout_marginTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_login" android:id="@+id/btnLogin" android:layout_gravity="center_horizontal"/>
+        <Button android:layout_marginTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_forget_pwd" android:id="@+id/btnPwd" android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
