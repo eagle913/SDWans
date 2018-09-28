@@ -4,6 +4,7 @@ import java.net.URLConnection;
 import java.util.Map;
 
 public class NetGet extends NetProxy {
+
     @Override
     protected String buildUrl(String url, Map<String, String> params) {
         return null;

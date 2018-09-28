@@ -17,13 +17,17 @@ import java.net.UnknownHostException;
 import java.util.Map;
 
 public abstract class NetProxy implements IHttpProxy {
-
+    public String HOST = "";
     private static final String TAG = NetProxy.class.getSimpleName();
     private URLConnection connection;
     private String url;
     private String param;
-    private StringRes response;
+    protected StringRes response;
 
+
+    protected void asynTask(Runnable r){
+        new Thread(r).start();
+    }
 
     public void setResponse(IResponse response){
         //TODO
