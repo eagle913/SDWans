@@ -1,5 +1,5 @@
 package com.eagle.net;
 
-interface Req {
+public interface Req {
     int TIME_OUT = 15;
 }

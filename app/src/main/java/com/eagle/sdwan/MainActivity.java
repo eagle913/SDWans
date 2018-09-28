@@ -8,17 +8,20 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.view.View;
 
 import com.eagle.location.BDLocation;
 import com.eagle.utils.SDLog;
+import com.eagle.view.PopMore;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements View.OnClickListener,PopMore.OnMoreItemClick{
     private static final int REQ_CODE_PERMISSION = 10000;
     private static final String TAG = "MainActivity";
     private static final int REQUEST_CODE_OPEN_DIRECTORY = REQ_CODE_PERMISSION + 1 ;
+    private PopMore popMore;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,6 +32,9 @@ public class MainActivity extends BaseActivity {
            if( checkPermission()){
                location();
            }
+
+        findViewById(R.id.imgMore).setOnClickListener(this);
+
 
 //        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
 //        startActivityForResult(intent, REQUEST_CODE_OPEN_DIRECTORY);
@@ -89,5 +95,51 @@ public class MainActivity extends BaseActivity {
 
             SDLog.d(TAG,"onRequestPermissionsResult requestCode " + requestCode + " p = " + permissions[i] + " g = " + grantResults[i]);
         }
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.imgMore:
+                if(popMore == null){
+                    popMore = new PopMore(this,this);
+                }
+                popMore.showWindow(view);
+                break;
+            case R.id.imgHeader:
+                startActivity(new Intent(MainActivity.this,PersonalActivity.class));
+                break;
+
+        }
+    }
+
+    @Override
+    public void onItemReport() {
+        startActivity(new Intent(MainActivity.this,LogReportActivity.class));
+
+    }
+
+    @Override
+    public void onItemLogs() {
+        startActivity(new Intent(MainActivity.this,LogListActivity.class));
+
+    }
+
+    @Override
+    public void onItemTraffic() {
+        startActivity(new Intent(MainActivity.this,TrafficActivity.class));
+    }
+
+    @Override
+    public void onItemConfig() {
+        startActivity(new Intent(MainActivity.this,SettingActivity.class));
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
     }
 }

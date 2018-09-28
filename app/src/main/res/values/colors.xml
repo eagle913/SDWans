@@ -6,4 +6,12 @@
     <color name="background">#FFFFFF</color>
     <color name="sd_bulue">#528EFF</color>
     <color name="wite">#FFFFFF</color>
+    <color name="login_name_text">#333333</color>
+    <color name="login_edit_hint">#E0E0E0</color>
+    <color name="login_forget_pwd">#D9888888</color>
+
+    <color name="transparent">#00000000</color>
+
+
+
 </resources>

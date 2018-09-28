@@ -18,7 +18,7 @@
                 android:id="@+id/relTop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/sd_bulue"
+                android:background="@drawable/top_blue"
                 android:padding="@dimen/padding_left_right"
                 android:paddingTop="25dp">
 
@@ -28,18 +28,21 @@
                     android:layout_height="wrap_content"
                     android:fitsSystemWindows="true">
 
-                    <ImageView
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        app:riv_corner_radius="55dp"
+                        app:riv_mutate_background="true"
                         android:id="@+id/imgHeader"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@mipmap/ic_launcher" />
 
                     <ImageView
                         android:id="@+id/imgMore"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@drawable/icon_more" />
                 </RelativeLayout>
 
                 <ImageView
@@ -48,7 +51,7 @@
                     android:layout_height="30dp"
                     android:layout_below="@+id/relHeaderTop"
                     android:layout_marginTop="30dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/more_config" />
 
                 <TextView
                     android:id="@+id/txtLoction"

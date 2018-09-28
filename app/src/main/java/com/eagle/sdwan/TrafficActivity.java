@@ -1,9 +1,8 @@
 package com.eagle.sdwan;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TrafficActivity extends AppCompatActivity {
+public class TrafficActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

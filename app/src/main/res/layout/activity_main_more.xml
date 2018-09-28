@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:orientation="vertical"
-    android:layout_height="match_parent">
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtReport" android:text="@string/main_more_report" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/ic_launcher_background"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtInfo" android:text="@string/main_more_info"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtTraffic" android:text="@string/main_more_traffic"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txtConfig" android:text="@string/main_more_config"/>
+    android:background="@drawable/pop_more_bg"
+    android:paddingLeft="20sp"
+    android:layout_height="wrap_content">
+    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtReport" android:text="@string/main_more_report" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_report" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtInfo" android:text="@string/main_more_info" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_logs" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtTraffic" android:text="@string/main_more_traffic" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_traffic" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtConfig" android:text="@string/main_more_config" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_config" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
 
 </LinearLayout>
