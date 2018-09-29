@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:orientation="vertical"
-    android:background="@drawable/pop_more_bg"
-    android:paddingLeft="20sp"
-    android:layout_height="wrap_content">
-    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtReport" android:text="@string/main_more_report" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_report" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtInfo" android:text="@string/main_more_info" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_logs" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtTraffic" android:text="@string/main_more_traffic" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_traffic" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
-    <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtConfig" android:text="@string/main_more_config" android:drawablePadding="30dp" android:gravity="center_vertical" android:drawableLeft="@drawable/more_config" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+   >
 
+
+    <LinearLayout  android:layout_width="150dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/pop_more_bg"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtReport" android:text="@string/main_more_report" android:drawablePadding="20dp" android:gravity="center_vertical" android:drawableLeft="@mipmap/sd_more_config" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtInfo" android:text="@string/main_more_info" android:drawablePadding="20dp" android:gravity="center_vertical" android:drawableLeft="@mipmap/sd_log_info" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtTraffic" android:text="@string/main_more_traffic" android:drawablePadding="20dp" android:gravity="center_vertical" android:drawableLeft="@mipmap/sd_more_traffic" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="60dp" android:id="@+id/txtConfig" android:text="@string/main_more_config" android:drawablePadding="20dp" android:gravity="center_vertical" android:drawableLeft="@mipmap/sd_more_config" android:textSize="@dimen/text_size_14" android:textColor="@color/login_name_text"/>
+
+    </LinearLayout>
 </LinearLayout>

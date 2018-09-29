@@ -68,7 +68,7 @@
             android:theme="@style/MyFullScreenTheme" />
         <activity android:name=".SDWLoginActivity" />
         <activity android:name=".SettingActivity" />
-        <activity android:name=".PersonalActivity" />
+        <activity android:name=".PersonalActivity" android:theme="@style/MyFullScreenTheme" />
         <activity android:name=".LogReportActivity" />
         <activity android:name=".LogListActivity" />
         <activity android:name=".TrafficActivity" />

@@ -32,9 +32,9 @@
                         app:riv_corner_radius="55dp"
                         app:riv_mutate_background="true"
                         android:id="@+id/imgHeader"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:src="@mipmap/ic_launcher" />
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@mipmap/sd_header" />
 
                     <ImageView
                         android:id="@+id/imgMore"
@@ -42,16 +42,16 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
-                        android:src="@drawable/icon_more" />
+                        android:src="@mipmap/sd_more" />
                 </RelativeLayout>
 
                 <ImageView
                     android:id="@+id/imgLocation"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/relHeaderTop"
-                    android:layout_marginTop="30dp"
-                    android:src="@drawable/more_config" />
+                    android:layout_marginTop="40dp"
+                    android:src="@mipmap/sd_loction" />
 
                 <TextView
                     android:id="@+id/txtLoction"
@@ -84,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txtSpeed"
-                    android:src="@mipmap/sd_logo_img" />
+                    android:src="@mipmap/sd_logo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -110,7 +110,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/relCenter "
+                android:layout_below="@+id/relCenter"
                 android:padding="@dimen/padding_left_right">
 
                 <TextView

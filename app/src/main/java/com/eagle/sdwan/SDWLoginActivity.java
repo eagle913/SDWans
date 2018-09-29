@@ -5,6 +5,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
+import com.eagle.utils.UIUtil;
+
 public class SDWLoginActivity extends BaseActivity {
 
     @Override
@@ -23,5 +25,13 @@ public class SDWLoginActivity extends BaseActivity {
                 startActivity(new Intent(SDWLoginActivity.this,MainActivity.class));
             }
         });
+
+        UIUtil.statusBarLightMode(this);
     }
+
+
+
+
+
+
 }

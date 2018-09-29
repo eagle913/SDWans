@@ -34,6 +34,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,P
            }
 
         findViewById(R.id.imgMore).setOnClickListener(this);
+           findViewById(R.id.imgHeader).setOnClickListener(this);
 
 
 //        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);

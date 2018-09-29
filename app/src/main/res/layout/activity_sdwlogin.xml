@@ -9,7 +9,7 @@
     <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
             android:orientation="vertical">
-            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sd_login_img" />
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@mipmap/sd_logo_um" />
             <LinearLayout android:layout_marginTop="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:background="@drawable/sd_login_item_bg" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" >
 
                 <TextView android:layout_width="wrap_content" android:layout_marginLeft="5dp"  android:layout_height="wrap_content" android:text="@string/login_account" android:textSize="16sp" android:textColor="@color/login_name_text"/>
@@ -19,11 +19,11 @@
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:background="@drawable/sd_login_item_bg" android:layout_marginLeft="30dp" android:layout_marginRight="30dp">
 
                 <TextView android:layout_width="wrap_content" android:layout_marginLeft="5dp"  android:layout_height="wrap_content" android:text="@string/login_pwd" android:textSize="16sp" android:textColor="@color/login_name_text"/>
-                <EditText android:layout_width="wrap_content" android:layout_marginLeft="25dp" android:layout_height="wrap_content" android:id="@+id/editPwd" android:hint="@string/login_pwd_hint" android:layout_weight="1" android:background="@color/background" android:textColorHint="@color/login_edit_hint"/>
+                <EditText android:layout_width="wrap_content" android:layout_marginLeft="25dp" android:layout_height="wrap_content" android:id="@+id/editPwd" android:hint="@string/login_pwd_hint" android:layout_weight="1" android:background="@color/background" android:textColorHint="@color/login_edit_hint" android:inputType="textPassword"/>
                 <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imgPwd" android:visibility="invisible"/>
             </LinearLayout>
 
-        <Button android:layout_marginTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/btnLogin" android:layout_gravity="center_horizontal" android:background="@mipmap/login_btn" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" />
+        <Button android:layout_marginTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/btnLogin" android:layout_gravity="center_horizontal" android:background="@mipmap/sd_btn_blue" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/login_login" android:textColor="@color/wite"/>
         <TextView android:layout_marginTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_forget_pwd" android:id="@+id/btnPwd" android:layout_gravity="center_horizontal" android:textColor="@color/login_forget_pwd"/>
         </LinearLayout>
 

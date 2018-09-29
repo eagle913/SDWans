@@ -3,6 +3,8 @@ package com.eagle.sdwan;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.eagle.utils.UIUtil;
+
 public class SetupActivity extends BaseActivity {
 
     @Override
@@ -14,12 +16,13 @@ public class SetupActivity extends BaseActivity {
 
 
         setContentView(R.layout.activity_setup);
-
+        UIUtil.statusBarLightMode(this);
         findViewById(R.id.imgLogo).postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent i = new Intent(SetupActivity.this,SDWLoginActivity.class);
                 startActivity(i);
+                finish();
             }
         },2000);
 
