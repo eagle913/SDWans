@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".SettingActivity">
     <include layout="@layout/header_layout" android:id="@+id/inc_header"/>
-    <include layout="@layout/activity_setting_item_layout" android:id="@+id/inc_priip" app:layout_constraintTop_toBottomOf="@id/inc_header"/>
-    <include layout="@layout/activity_setting_item_layout" android:id="@+id/inc_pubip" app:layout_constraintTop_toBottomOf="@id/inc_priip"/>
+    <include layout="@layout/activity_setting_item_layout" android:id="@+id/inc_priip" />
+    <include layout="@layout/activity_setting_item_layout" android:id="@+id/inc_pubip" />
 
    <android.support.v7.widget.RecyclerView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/listCenter" android:layout_marginTop="10dp"/>
 

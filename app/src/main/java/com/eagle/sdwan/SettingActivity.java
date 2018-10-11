@@ -2,7 +2,7 @@ package com.eagle.sdwan;
 
 import android.os.Bundle;
 
-public class SettingActivity extends BaseActivity {
+public class SettingActivity extends BaseTitleActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,7 +2,7 @@ package com.eagle.sdwan;
 
 import android.os.Bundle;
 
-public class LogReportActivity extends BaseActivity {
+public class LogReportActivity extends BaseTitleActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

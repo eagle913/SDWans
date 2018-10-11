@@ -67,12 +67,25 @@
             android:name=".LoginActivity"
             android:theme="@style/MyFullScreenTheme" />
         <activity android:name=".SDWLoginActivity" />
-        <activity android:name=".SettingActivity" />
-        <activity android:name=".PersonalActivity" android:theme="@style/MyFullScreenTheme" />
-        <activity android:name=".LogReportActivity" />
-        <activity android:name=".LogListActivity" />
-        <activity android:name=".TrafficActivity" />
-        <activity android:name=".EditActivity"></activity>
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".PersonalActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".LogReportActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".LogListActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".TrafficActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".EditActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity android:name=".BaseTitleActivity"></activity>
     </application>
 
 </manifest>

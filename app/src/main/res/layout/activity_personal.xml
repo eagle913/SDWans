@@ -6,21 +6,21 @@
     android:orientation="vertical"
     tools:context=".PersonalActivity">
 
-    <include layout="@layout/header_layout"/>
+    <include layout="@layout/header_layout" />
 
     <LinearLayout
-        android:padding="15dp"
-        android:background="@color/sd_bulue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/relBar"
+        android:background="@drawable/top_blue"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="15dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
@@ -30,10 +30,10 @@
                 android:text="王小明" />
 
             <TextView
-                android:layout_marginTop="15dp"
                 android:id="@+id/txtCompany"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:text="北京鱼人网络科技有限公司" />
 
         </LinearLayout>
@@ -56,9 +56,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -148,13 +148,13 @@
     </LinearLayout>
 
     <Button
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:id="@+id/btnExit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/sd_btn_blue"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="30dp"
+        android:background="@mipmap/sd_btn_blue"
         android:text="@string/personal_exit" />
 
 </LinearLayout>
