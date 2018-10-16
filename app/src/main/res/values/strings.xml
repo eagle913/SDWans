@@ -42,10 +42,15 @@
     <string name="personal_idea">意见反馈</string>
     <string name="personal_exit">退出登录</string>
 
-    <string name="report_hint">请填写日志内容</string>
+    <string name="report_hint">请描述您遇到的问题或反馈信息</string>
     <string name="report_log_type">日志类型</string>
     <string name="report_log_today">当天日志</string>
     <string name="report_log_all">所有日志</string>
+    <string name="report_your_idea">您的反馈是：</string>
+    <string name="report_type_suj">建议</string>
+    <string name="report_type_err">出错</string>
+    <string name="report_type_other">其他</string>
+    <string name="report_submit">提交</string>
 
     <string name="traffic_title">流量统计</string>
     <string name="traffic_total_year">%d年累计使用流量</string>

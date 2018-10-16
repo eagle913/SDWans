@@ -10,33 +10,66 @@
         android:id="@+id/inc_header"
         layout="@layout/header_layout" />
 
+    <LinearLayout
+        android:id="@+id/linType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_root_margin"
+        android:orientation="vertical"
+        android:padding="@dimen/common_root_margin"
+        app:layout_constraintTop_toBottomOf="@id/inc_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_your_idea" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/radio"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_root_margin"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report_type_suj" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report_type_err" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/report_type_other" />
+        </RadioGroup>
+    </LinearLayout>
+
+
     <EditText
         android:id="@+id/editLog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_root_margin"
+        android:background="@color/transparent"
         android:gravity="start"
         android:hint="@string/report_hint"
         android:lines="7"
-        app:layout_constraintTop_toBottomOf="@id/inc_header" />
+        android:padding="@dimen/common_root_margin"
+        app:layout_constraintTop_toBottomOf="@id/linType" />
 
-    <LinearLayout
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/editLog">
+        android:layout_margin="@dimen/common_root_margin"
+        android:background="@mipmap/sd_btn_blue"
+        android:text="@string/report_submit"
+        app:layout_constraintTop_toBottomOf="@+id/editLog" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/report_log_type" />
-
-        <TextView
-            android:id="@+id/txtType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawablePadding="10dp"
-            android:drawableRight="@mipmap/ic_launcher" />
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

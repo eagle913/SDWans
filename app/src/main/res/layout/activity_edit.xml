@@ -10,10 +10,11 @@
     <include layout="@layout/header_layout" />
 
     <LinearLayout
-        android:background="@drawable/personal_item_line_bottom"
         android:id="@+id/linAvter"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/common_item_height"
+        android:layout_marginLeft="@dimen/common_root_margin"
+        android:layout_marginRight="@dimen/common_root_margin"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -35,10 +36,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:background="@drawable/personal_item_line_bottom"
         android:id="@+id/linNick"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/common_item_height"
+        android:layout_marginLeft="@dimen/common_root_margin"
+        android:layout_marginRight="@dimen/common_root_margin"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -51,14 +53,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/sd_right_icon"
+            android:gravity="center_vertical"
             android:text="王小明" />
     </LinearLayout>
 
     <LinearLayout
-        android:background="@drawable/personal_item_line_bottom"
         android:id="@+id/linAcc"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/common_item_height"
+        android:layout_marginLeft="@dimen/common_root_margin"
+        android:layout_marginRight="@dimen/common_root_margin"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -71,14 +76,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/sd_right_icon"
+            android:gravity="center_vertical"
             android:text="tiger@163.com" />
     </LinearLayout>
 
     <LinearLayout
-        android:background="@drawable/personal_item_line_bottom"
         android:id="@+id/linCompany"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/common_item_height"
+        android:layout_marginLeft="@dimen/common_root_margin"
+        android:layout_marginRight="@dimen/common_root_margin"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -86,11 +94,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/edit_avter" />
+            android:text="@string/edit_company" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/sd_right_icon"
+            android:gravity="center_vertical"
             android:text="风云科技优先公司" />
     </LinearLayout>
 </LinearLayout>
