@@ -11,4 +11,8 @@ public class SDLog {
     public static void w(String tag, Throwable e) {
         Log.w(TAG,tag+":exception msg = "+e.getMessage());
     }
+
+    public static void e(String tag, String e) {
+        Log.e(TAG,tag+": "+e);
+    }
 }

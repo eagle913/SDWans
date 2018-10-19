@@ -17,7 +17,7 @@ import java.net.UnknownHostException;
 import java.util.Map;
 
 public abstract class NetProxy implements IHttpProxy {
-    public String HOST = "";
+    public String HOST = "47.100.225.58";
     private static final String TAG = NetProxy.class.getSimpleName();
     private URLConnection connection;
     private String url;
@@ -140,9 +140,10 @@ public abstract class NetProxy implements IHttpProxy {
             connection.setRequestProperty("Charset", "utf-8");
             connection.setConnectTimeout(IResponse.ERR_TIME_OUT);
             connection.setReadTimeout(IResponse.ERR_TIME_OUT);
-            in = new InputStreamReader(connection.getInputStream());
+
             int code = connection.getResponseCode();
             if (code == HttpURLConnection.HTTP_OK) {
+                in = new InputStreamReader(connection.getInputStream());
                 BufferedReader bufferedReader = new BufferedReader(in);
                 StringBuffer strBuffer = new StringBuffer();
                 String line = null;

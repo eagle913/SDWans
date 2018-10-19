@@ -15,14 +15,18 @@ import com.eagle.net.StringRes;
  }
  */
 public class LoginReq extends NetGet {
-    String path = " /v1/api/appuserauth";
+    String path = "/v1/api/appuserauth";
 
+    private boolean force = false;
+    public void setForce(boolean force){
+        this.force = force;
+    }
     public void login(final String email, final String pwd, final StringRes res){
 
        asynTask(new Runnable() {
            @Override
            public void run() {
-               String url = ProxyConfig.getIns().getScheme()+HOST+path + "?username="+email+"&passwd="+pwd+"&forcelogin=0";
+               String url = ProxyConfig.getIns().getScheme()+HOST+path + "?username="+email+"&passwd="+pwd+"&forcelogin="+ (force?1:0);
                excuteGet(url, res);
            }
        });
