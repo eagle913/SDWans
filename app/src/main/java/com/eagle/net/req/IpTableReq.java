@@ -17,7 +17,7 @@ import com.eagle.net.StringRes;
  */
 
 public class IpTableReq extends NetGet {
-    String path = " /v1/api/appgetiptable";
+    String path = "/v1/api/appgetiptable";
     public void getIptable(final String userName, final String sessionId, final StringRes res) {
         asynTask(new Runnable() {
         @Override

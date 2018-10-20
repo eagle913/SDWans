@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 public class BaseActivity extends AppCompatActivity {
     @Override
@@ -30,5 +31,14 @@ public class BaseActivity extends AppCompatActivity {
             window.setStatusBarColor(Color.TRANSPARENT);
         }
 
+    }
+
+    public void toast(final String msg){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

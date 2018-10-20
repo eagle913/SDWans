@@ -16,7 +16,7 @@ import com.eagle.net.StringRes;
 
  */
 public class LogoutReq extends NetGet {
-    String path = " /v1/api/applogoff";
+    String path = "/v1/api/applogoff";
 
     public void logout(final String email, final String sessionId, final String traffic, final StringRes res){
 

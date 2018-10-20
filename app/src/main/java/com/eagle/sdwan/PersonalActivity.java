@@ -6,6 +6,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.eagle.data.FwConfig;
+import com.eagle.entity.Account;
+import com.eagle.net.req.LogoutReq;
+import com.eagle.net.res.LoginOutRes;
+
 public class PersonalActivity extends BaseTitleActivity implements View.OnClickListener{
 
     private TextView txtCompany;
@@ -48,8 +53,36 @@ public class PersonalActivity extends BaseTitleActivity implements View.OnClickL
                 startActivity(new Intent(PersonalActivity.this, LogReportActivity.class));
                 break;
             case R.id.btnExit:
+                loginOut();
                 break;
         }
 
+    }
+
+    private void loginOut() {
+        Account account = FwConfig.getIns().getAccount();
+        if(account == null){
+            //TODO
+            exit();
+        }else {
+            LogoutReq req = new LogoutReq();
+            req.logout(account.getAcc(), account.getSessId(), FwConfig.getIns().getTrafic(), new LoginOutRes() {
+                @Override
+                public void onRes(Account account) {
+                    //
+                    toast("账号已经登出");
+                    exit();
+                }
+
+                @Override
+                public void onConnectError(int errCode, String msg) {
+                   exit();
+                }
+            });
+        }
+    }
+
+    private void exit(){
+        toast("应用退出待实现！");
     }
 }

@@ -67,8 +67,7 @@
             android:name=".LoginActivity"
             android:theme="@style/MyFullScreenTheme" />
         <activity android:name=".SDWLoginActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout"
-            android:windowSoftInputMode="adjustResize|stateHidden|"/>
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
         <activity
             android:name=".SettingActivity"
             android:theme="@style/MyFullScreenTheme" />

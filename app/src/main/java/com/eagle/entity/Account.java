@@ -9,6 +9,8 @@ public class Account extends Ret{
     public static final String RETCODE_NOT_EXIST = "1";
     String sessId = "";
 
+    private String acc;
+
     public String getSessId() {
         return sessId;
     }
@@ -27,5 +29,13 @@ public class Account extends Ret{
         return "Account{" +
                 "sessId='" + sessId + "\' " + super.toString() +
                 '}';
+    }
+
+    public String getAcc() {
+        return acc;
+    }
+
+    public void setAcc(String acc) {
+        this.acc = acc;
     }
 }

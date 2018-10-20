@@ -40,7 +40,7 @@ import com.eagle.net.StringRes;
 
  */
 public class TunelDetailReq extends NetGet {
-    String path = "/v1/api/appgetstepnetbw?";
+    String path = "/v1/api/appgetstepnetbw";
     //TODO tunel id?
     public void getTunelDetal(final String userName, final String sessionId, final StringRes res){
         asynTask(new Runnable() {

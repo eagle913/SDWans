@@ -9,8 +9,6 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-import jdk.nashorn.api.scripting.JSObject;
-
 /**
  *
  * 用户心跳信息：
@@ -46,6 +44,7 @@ public class HeartBeatReq extends NetPost {
                 //TODO POST 尝试参数在url后面的post
                 String url = ProxyConfig.getIns().getScheme()+HOST+path +"?username="+userName+"&sessionid="+sessionId+"&traffic="  + traffic;
                 JSONObject object = new JSONObject();
+                //TODO md5
                 String param = "";
                 try {
                     object.put("iptable","");
@@ -55,9 +54,8 @@ public class HeartBeatReq extends NetPost {
                 }catch (JSONException E){
 
                 }
-                HashMap<String,String> map = new HashMap<String,String> ();
-                map.put("Content-Type","");
-                excute(url, param,map);
+
+                excute(url, param,null);
             }
         });
     }
