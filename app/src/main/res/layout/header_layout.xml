@@ -29,6 +29,8 @@
 
             <TextView
                 android:id="@+id/txtTitle"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/text_size_20"
                 android:layout_toRightOf="@+id/imgBack"
                 android:layout_toLeftOf="@+id/txtRight"
                 android:layout_width="wrap_content"

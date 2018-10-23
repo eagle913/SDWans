@@ -25,7 +25,7 @@
                 <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/imgPwd" android:visibility="invisible"/>
             </LinearLayout>
 
-        <Button android:layout_marginTop="15dp" android:textSize="@dimen/text_size_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/btnLogin" android:layout_gravity="center_horizontal" android:background="@drawable/sd_btn_blue_gray_selector" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/login_login" android:textColor="@color/wite" />
+        <Button android:layout_marginTop="15dp" android:textSize="@dimen/text_size_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/btnLogin" android:layout_gravity="center_horizontal" android:background="@mipmap/sd_btn_blue" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="@string/login_login" android:textColor="@color/wite" />
         <!--<TextView android:layout_marginTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_forget_pwd" android:id="@+id/btnPwd" android:layout_gravity="center_horizontal" android:textColor="@color/login_forget_pwd"/>-->
         </LinearLayout>
 
