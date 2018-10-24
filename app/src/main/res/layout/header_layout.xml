@@ -13,10 +13,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
             android:layout_marginRight="10dp">
 
             <ImageView
                 android:padding="5dp"
+                android:layout_centerVertical="true"
                 android:id="@+id/imgBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -36,6 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
+                android:paddingLeft="@dimen/common_root_margin"
                 android:text="@string/personal_text" />
 
 

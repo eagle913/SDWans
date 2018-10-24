@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class AppSp {
+     public static final String ACC = "acc";
+     public static final String PWD = "pwd";
     private SharedPreferences sp;
 
     private static final String SP_NAME = "sdwan";
@@ -27,5 +29,12 @@ public class AppSp {
         return ins;
     }
 
+    public String getString(String key){
+        return  sp.getString(key,"");
+    }
+
+    public boolean putString(String key,String value){
+        return sp.edit().putString(key,value).commit();
+    }
 
 }

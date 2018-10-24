@@ -56,6 +56,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,P
         if (checkCallingOrSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             permissions.add(Manifest.permission.ACCESS_FINE_LOCATION);
         }
+        if (checkCallingOrSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            permissions.add(Manifest.permission.CAMERA);
+        }
         int size = permissions.size();
         if (size > 0) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

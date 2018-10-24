@@ -9,8 +9,8 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
+import com.eagle.data.AppSp;
 import com.eagle.data.FwConfig;
 import com.eagle.entity.Account;
 import com.eagle.entity.IpTable;
@@ -70,6 +70,8 @@ public class SDWLoginActivity extends BaseActivity {
 //                startActivity(new Intent(SDWLoginActivity.this,MainActivity.class));
             }
         });
+        editAcc.setText(AppSp.getIns().getString(AppSp.ACC));
+        editPwd.setText(AppSp.getIns().getString(AppSp.PWD));
         updateBtn();
     }
 
@@ -113,6 +115,8 @@ public class SDWLoginActivity extends BaseActivity {
                 }else if(Account.RETCODE_OK.equals(ret)){
                     account.setAcc(acc);
                     FwConfig.getIns().setAccount(account);
+                    AppSp.getIns().putString(AppSp.ACC,acc);
+                    AppSp.getIns().putString(AppSp.PWD,pwd);
                     getIpTable(acc,account.getSessId());
                     loginSuccuss(acc,account.getSessId());
 
