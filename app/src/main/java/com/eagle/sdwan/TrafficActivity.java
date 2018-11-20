@@ -8,5 +8,6 @@ public class TrafficActivity extends BaseTitleActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traffic);
+        setTitle(getString(R.string.traffic_title));
     }
 }

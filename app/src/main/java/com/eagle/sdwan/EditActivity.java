@@ -14,6 +14,7 @@ public class EditActivity extends BaseTitleActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
+        setTitle(getString(R.string.edit_info));
 
         findViewById(R.id.linAvter).setOnClickListener(new View.OnClickListener() {
             @Override
