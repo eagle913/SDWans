@@ -26,8 +26,9 @@
     <string name="login_forget_pwd">忘记密码</string>
 
     <string name="login_exist">帐号已经在其他设备上登录，可强制登录</string>
-    <string name="login_force_login">强制登录</string>
+    <string name="login_force_login">强行登录</string>
     <string name="login_exit">退出</string>
+    <string name="login_cancel">不了</string>
     <string name="login_acc_empty">帐号不能为空</string>
     <string name="login_pwd_empty">密码不能为空</string>
     <string name="login_not_exist">帐号不存在</string>

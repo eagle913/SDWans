@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@android:drawable/dialog_holo_light_frame"
     android:orientation="vertical">
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
 
     <TextView
-        android:id="@+id/txtTitle"
-        android:layout_width="match_parent"
+        android:id="@+id/message"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_14"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:minLines="4"
-        android:text="fkdfjadksfsa" />
+        android:minLines="6" />
 
+    <LinearLayout android:layout_width="320dp" android:layout_height="wrap_content" android:id="@+id/content" android:orientation="vertical"/>
     <LinearLayout
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/positiveButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@color/transparent"
             android:layout_weight="1"/>
 
         <View
-            android:id="@+id/divider"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:id="@+id/iv_bottom_center"
+            android:layout_width="1dp"
+            android:layout_height="15dp"
             android:background="?android:attr/listDivider" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/negativeButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@color/transparent"
             android:layout_weight="1"/>
 
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:background="?android:attr/listDivider" />
-
-        <Button
-            android:id="@+id/btn3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
 
     </LinearLayout>
 </LinearLayout>

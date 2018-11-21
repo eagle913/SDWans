@@ -1,6 +1,5 @@
 package com.eagle.sdwan;
 
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,6 +30,7 @@ import com.eagle.net.res.PathInfoRes;
 import com.eagle.net.res.StepNetBw;
 import com.eagle.net.res.StepToNetRes;
 import com.eagle.utils.UIUtil;
+import com.eagle.view.CustomDialog;
 
 public class SDWLoginActivity extends BaseActivity {
 
@@ -122,7 +122,7 @@ public class SDWLoginActivity extends BaseActivity {
 
 //                    startActivity(new Intent(SDWLoginActivity.this,MainActivity.class));
                 }else if(Account.RETCODE_EXIEST.equals(ret)){
-                    dialog(getString(R.string.login_exist), getString(R.string.login_exit), new DialogInterface.OnClickListener() {
+                    dialog(getString(R.string.login_exist), getString(R.string.login_cancel), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             //TODO
@@ -299,15 +299,17 @@ public class SDWLoginActivity extends BaseActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                AlertDialog.Builder b  =  new AlertDialog.Builder(SDWLoginActivity.this).setMessage(msg);
+                CustomDialog.Builder b  =  new CustomDialog.Builder(SDWLoginActivity.this).setMessage(msg);
                 if(text1 != null){
-                    b.setPositiveButton(text1,l1);
+                    b.setPositiveButton(text1,l1).setPositiveButtonTextColor(getResources().getColor(R.color.sd_bulue));
                 }
                 if(text2 != null){
-                    b.setNegativeButton(text2,l2);
+                    b.setNegativeButton(text2,l2).setNegativeButtonTextColor(getResources().getColor(R.color.sd_bulue));
                 }
-                b.setCancelable(false);
-                b.create().show();
+//                b.setCancelable(false);
+                CustomDialog dialog =  b.create();
+                dialog.setCancelable(false);
+                dialog.show();
             }
         });
 
