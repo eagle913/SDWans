@@ -29,6 +29,7 @@ public class EditActivity extends BaseTitleActivity {
                 PicSelector.takePhoto(EditActivity.this);
             }
         });
+
     }
 
 

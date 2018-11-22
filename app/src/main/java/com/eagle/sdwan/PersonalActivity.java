@@ -44,10 +44,12 @@ public class PersonalActivity extends BaseTitleActivity implements View.OnClickL
                 startActivity(new Intent(PersonalActivity.this, EditActivity.class));
                 break;
             case R.id.linPwd:
+                startActivity(new Intent(PersonalActivity.this,FixPwdActivity.class));
                 break;
             case R.id.linClean:
                 break;
             case R.id.linAbout:
+                startActivity(new Intent(PersonalActivity.this,AboutActivity.class));
                 break;
             case R.id.linIdea:
                 startActivity(new Intent(PersonalActivity.this, LogReportActivity.class));

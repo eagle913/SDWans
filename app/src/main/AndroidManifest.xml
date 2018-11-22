@@ -89,6 +89,12 @@
         <activity
             android:name=".EditActivity"
             android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".FixPwdActivity"
+            android:theme="@style/MyFullScreenTheme" />
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/MyFullScreenTheme" />
 
 
         <provider

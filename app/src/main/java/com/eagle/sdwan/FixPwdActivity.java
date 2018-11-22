@@ -1,0 +1,14 @@
+package com.eagle.sdwan;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+
+public class FixPwdActivity extends BaseTitleActivity {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fixpwd);
+        setTitle(getString(R.string.fixpwd_text));
+    }
+}

@@ -78,4 +78,12 @@
     <string name="edit_account">帐号</string>
     <string name="edit_company">企业名称</string>
 
+
+    <string name="fixpwd_text">修改密码</string>
+    <string name="fixpwd_new">新密码</string>
+    <string name="fixpwd_old">旧密码</string>
+    <string name="fixpwd_new2">再次新密码</string>
+
+
+
 </resources>

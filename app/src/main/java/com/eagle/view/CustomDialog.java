@@ -26,9 +26,9 @@ public class CustomDialog extends Dialog {
      * base theme used to present the dialog.
      *
      * @param context the context in which the dialog should run
-     * @see android.R.styleable#Theme_dialogTheme
+     *
      */
-    protected CustomDialog(@NonNull Context context) {
+    private CustomDialog(@NonNull Context context) {
         super(context);
     }
 
@@ -47,11 +47,11 @@ public class CustomDialog extends Dialog {
      * @param themeResId a style resource describing the theme to use for the
      *                   window, or {@code 0} to use the default dialog theme
      */
-    protected CustomDialog(@NonNull Context context, int themeResId) {
+    private CustomDialog(@NonNull Context context, int themeResId) {
         super(context, themeResId);
     }
 
-    protected CustomDialog(@NonNull Context context, boolean cancelable, @Nullable OnCancelListener cancelListener) {
+    private CustomDialog(@NonNull Context context, boolean cancelable, @Nullable OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
     }
 
@@ -78,8 +78,8 @@ public class CustomDialog extends Dialog {
         /**
          * Set the Dialog message from String
          *
-         * @param message
-         * @return
+         * @param message msg
+         * @return builder
          */
         public Builder setMessage(String message) {
             this.message = message;
@@ -89,8 +89,8 @@ public class CustomDialog extends Dialog {
         /**
          * Set the Dialog message from resource
          *
-         * @param message
-         * @return
+         * @param message msg
+         * @return b
          */
         public Builder setMessage(int message) {
             this.message = (String) context.getText(message);
@@ -234,7 +234,7 @@ public class CustomDialog extends Dialog {
             return create(layout, dialog);
         }
 
-        public CustomDialog create(View layout, CustomDialog mDialog) {
+        private CustomDialog create(View layout, CustomDialog mDialog) {
 
             // instantiate the dialog with the custom Theme
 
