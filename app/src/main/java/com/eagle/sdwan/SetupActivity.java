@@ -3,6 +3,7 @@ package com.eagle.sdwan;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.eagle.data.FwConfig;
 import com.eagle.utils.UIUtil;
 
 public class SetupActivity extends BaseActivity {
@@ -21,6 +22,9 @@ public class SetupActivity extends BaseActivity {
             @Override
             public void run() {
                 Intent i = new Intent(SetupActivity.this,SDWLoginActivity.class);
+                if(FwConfig.getIns().getAccount() != null){
+                    i.setClass(getApplicationContext(),MainActivity.class);
+                }
                 startActivity(i);
                 finish();
             }

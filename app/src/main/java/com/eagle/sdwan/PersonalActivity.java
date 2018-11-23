@@ -73,6 +73,7 @@ public class PersonalActivity extends BaseTitleActivity implements View.OnClickL
                 public void onRes(Account account) {
                     //
                     toast("账号已经登出");
+                    FwConfig.getIns().setAccount(null);
                     exit();
                 }
 
@@ -86,5 +87,8 @@ public class PersonalActivity extends BaseTitleActivity implements View.OnClickL
 
     private void exit(){
         toast("应用退出待实现！");
+//        System.exit(0);
+//        Process.killProcess(Process.myPid());
+
     }
 }
